@@ -1,6 +1,6 @@
 #### Ziel der App
-Die App soll Name und Nachname des Benutzers nehmen und diese Lokal Speichern
-
+Die App zeigt verschiedene Strings (Text) an und ändert Hintergrundfarbe (Beispiel #1)
+Die App soll Name und Nachname des Benutzers nehmen und diese Lokal Speichern (Bespiel #2)
 
 
 ### Entwicklerumgebung einrichten
