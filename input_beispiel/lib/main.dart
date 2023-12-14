@@ -12,8 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Input Beispiel',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      title: 'Beispiel',
+      theme: ThemeData(primarySwatch: Colors.red),
       home: const MyHomePage(title: 'Input Beispiel'),
     );
   }
@@ -35,33 +35,16 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("Hello World"),
       ),
-      body: Column(
-        children: [
-          Spacer(),
-          Center(
-            child: Text(
-              '${text.text}',
-              style: TextStyle(fontSize: 72),
-            ),
+      body: Center(
+        child: Text(
+          "Hello World",
+          style: TextStyle(
+            color: Colors.red,
+            fontSize: 50,
           ),
-          Spacer(),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0),
-            child: TextField(
-              onChanged: (value) {
-                setState(() {});
-              },
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                hintText: 'Geben Sie hier text ein',
-              ),
-              controller: text,
-            ),
-          ),
-          Spacer()
-        ],
+        ),
       ),
     );
   }
